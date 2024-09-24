@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datos Personales de Diego Armando Pérez Huerta">
+    <title>Datos Personales - Diego Armando Pérez Huerta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para la sección de datos personales */
+        #personal-info {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 60%;
+            height: auto;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-dot {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #slide1:checked ~ .slides {
+            transform: translateX(0);
+        }
+        #slide2:checked ~ .slides {
+            transform: translateX(-100%);
+        }
+        #slide3:checked ~ .slides {
+            transform: translateX(-200%);
+        }
+        #slide4:checked ~ .slides {
+            transform: translateX(-300%);
+        }
+
+        #slide1:checked ~ .navigation label:nth-child(1),
+        #slide2:checked ~ .navigation label:nth-child(2),
+        #slide3:checked ~ .navigation label:nth-child(3),
+        #slide4:checked ~ .navigation label:nth-child(4) {
+            background-color: #0073b1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diego Armando Pérez Huerta</h1>
+            <p>Ingeniero en Sistemas Computacionales | Desarrollador Web | Apasionado por la Tecnología</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+           <li><a href="index.html">Sobre mí</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="datos.html">Datos Personales</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="personal-info" class="container">
+        <h2 class="section-title">Datos Personales</h2>
+        <p><strong>Nombre:</strong> Diego Armando Pérez Huerta</p>
+        <p><strong>Edad:</strong> 21 años</p>
+        <p><strong>Numero cel:</strong>+52 238 129 4232</p>
+        <p><strong>De: </strong> Puebla, Mx</p>
+
+
+      
+
+        <h2 class="section-title">Trayectoria Escolar</h2>
+        <ul>
+            <li>Primaria - Instituto Cultural Tehuacán</li>
+            <li>Secundaria - Instituto Tehuacán A.C</li>
+            <li>Bachillerato - Bachillerato Universitario Simón Bolívar Tehuacán</li>
+            <li>Licenciatura en Ingeniería en Sistemas Computacionales - Instituto de Estudios Superiores del Estado</li>
+            <li>Universidad - Instituto de Estudios Superiores del Estado</li>
+        </ul>
+
+        <h2 class="section-title">Lugares que he visitado</h2>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <input type="radio" id="slide1" name="carousel">
+            <input type="radio" id="slide2" name="carousel">
+            <input type="radio" id="slide3" name="carousel" checked>
+            <input type="radio" id="slide4" name="carousel">
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="tijuana.jpeg" alt="Tijuana, México">
+                    <p>Tijuana, México</p>
+                </div>
+                <div class="slide">
+                    <img src="oaxaca.jpeg" alt="Oaxaca, México">
+                    <p>Oaxaca, México</p>
+                </div>
+                <div class="slide">
+                    <img src="cdmx.jpeg" alt="Ciudad de México, México">
+                    <p>Ciudad de México, México</p>
+                </div>
+                <div class="slide">
+                    <img src="toluca.jpeg" alt="Toluca, México">
+                    <p>Toluca, México</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="musica"> 
+         <h2 class="section-title">Música Favorita</h2>
+         <p>Escucha una de mis canciones favoritas:</p>
+         <audio controls>
+             <source src="musicaFavorita.mp3" type="audio/mpeg">
+             Tu navegador no soporta la reproducción de audio.
+         </audio>
+        </div>
+        
+            <section id="favorites" class="container">
+        <h2 class="section-title">Deportes y Animal Favorito</h2>
+        <p>Mi deporte favorito es el fútbol mis equipos son los Pumas de la UNAM y el Real Madrid, tambien suelo practicar natacion de vez en cuando y mi animal favorito es el gato y como dato adicional tengo 2 gatos.</p>
+        <img src="gato.jpg" alt="Imagen de un gato" />
+    </section>
+    
+    </section>
+    
+    
+
+
+    <footer>
+        <p>&copy; 2024 Diego Armando Pérez Huerta. Todos los derechos reservados.</p>
+    </footer>
+    
+    
+</body>
+</html>
